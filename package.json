@@ -1,0 +1,37 @@
+{
+  "name": "decentagency",
+  "version": "0.0.1",
+  "description": "A Jolly Decent Agency Indeed",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheJollyLaMa/DecentAgency.git"
+  },
+  "keywords": [
+    "python",
+    "nodejs",
+    "solidity",
+    "web3",
+    "cadCAD"
+  ],
+  "author": "TheJollyLaMa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheJollyLaMa/DecentAgency/issues"
+  },
+  "homepage": "https://github.com/TheJollyLaMa/DecentAgency#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "http-errors": "^2.0.0",
+    "jquery": "^3.6.0",
+    "nodemon": "^2.0.15"
+  }
+}
