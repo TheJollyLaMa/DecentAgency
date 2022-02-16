@@ -1,23 +1,54 @@
-<!-- DecentAgency index landing page -->
-<html lang="en-US">
-<head>
-    <meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="TheJollyLaMa">
+    <meta name="description" content="MEAN_Stack">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <title>Decent Agency</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="./img/fidfern.jpeg"/>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-</head>
-<body>
+    <title>Upstate Fiddles</title>
+  </head>
+  <body ng-app="ClientWebApp">
+    <header>
+      <div class="row">
+        <div class="col-xs-4"><a href="#!/DecentAgency" style="text-decoration:none;"><h1>🛖</h1></a></div>
+        <div class="col-xs-4"><a href="#!/About" style="text-decoration:none;"><h1>？</h1></a></div>
+        <div class="col-xs-4"><a href="#!/BehindTheCounter/Dashboard" style="text-decoration:none;"><h1>🎛</h1></a></div>
+      </div>
+    </header>
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron">
-                    <h1>You Been Served!</h1><br><br><br><br>
-                    <p>🌎 another Jolly Creation in the making ... ☄️</p>
-                </div>
-            </div>
+        <div class="mainViewWindow">
+          <ng-view></ng-view>
         </div>
-</body>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="col-xs-4"><a href="#!/DecentAgency" style="text-decoration:none;"><h1>🛖</h1></a></div>
+        <div class="col-xs-4"><a href="#!/About" style="text-decoration:none;"><h1>？</h1></a></div>
+        <div class="col-xs-4"><a href="#!/BehindTheCounter/Dashboard" style="text-decoration:none;"><h1>🎛</h1></a></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-4">🌎🌏 License: MIT 🌍🌎</div>
+        <div class="col-xs-4">
+          A Decent Agency Indeed
+        </div>
+        <div class="col-xs-4">🌎🌏 2 Feb 2022 🌍🌎</div>
+        <br>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+    <script type="text/javascript" src="js/angular-route.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/ClientWebApp.js"></script>
+    <script type="text/javascript" src="js/Controllers/DecentAgencyController.js"></script>
+    <script type="text/javascript" src="js/Controllers/DecentMentorController.js"></script>
+    <script type="text/javascript" src="js/Controllers/BehindTheCounterController.js"></script>
+    <script type="text/javascript" src="js/Controllers/AuthController.js"></script>
+    <script type="text/javascript" src="js/Services/DecentAgencyFactory.js"></script>
+    <script type="text/javascript" src="js/Services/AuthFactory.js"></script>
+  </body>
 </html>
