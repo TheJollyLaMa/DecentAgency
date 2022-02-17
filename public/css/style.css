@@ -14,7 +14,7 @@ footer {
 header {
   text-align: center;
   background-color: #1c4e5e;
-  color: white;git 
+  color: white;
 }
 form {
   margin: 2px;
@@ -38,7 +38,7 @@ form label, form input {
 .container::before {
   height: 100%;
   width: 100%;
-  background-image: url('../img/fidfern.jpeg');
+  background-image: url('../img/node_diagram_example.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   border-radius: 5px;
@@ -47,7 +47,7 @@ form label, form input {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.2;
+  opacity: 0.5;
 }
 
 .card {

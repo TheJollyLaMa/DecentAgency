@@ -4,17 +4,17 @@ app.config([
   function($routeProvider) {
     $routeProvider
 
-    .when("/", {controller: "DecentAgencyController", templateUrl: "DecentAgency/index.html"})
+    .when("/", {controller: "DecentAgencyController", templateUrl: "index.html"})
 
     /* --- Decent Agency---*/
 
     .when("/DecentAgency", {controller: "DecentAgencyController", templateUrl: "DecentAgency/decent_agency.html"})
-    .when("/About", {controller: "DecentAgencyController", templateUrl: "DecentAgency/about.html"})
+    .when("/DecentAgency/About", {controller: "DecentAgencyController", templateUrl: "DecentAgency/about.html"})
 
     /* --- Decent Mentor---*/
-    
-    .when("/DecentMentor", {controller: "DecentMentorController", templateUrl: "DecentMentor/decent_agency.html"})
-    .when("/About", {controller: "DecentMentorController", templateUrl: "DecentMentor/about.html"})
+
+    .when("/DecentMentor", {controller: "DecentMentorController", templateUrl: "DecentMentor/decent_mentor.html"})
+    .when("/DecentMentor/About", {controller: "DecentMentorController", templateUrl: "DecentMentor/about.html"})
 
     /* --- Login Routes---*/
     .when("/Login", {controller: "AuthController",templateUrl: "Login.html"})

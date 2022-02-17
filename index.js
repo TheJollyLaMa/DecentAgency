@@ -72,10 +72,10 @@ app.use('/', indexRouter);
 // app.use('/smarthome', smarthomeRouter);
 
 /* Locally available Node Modules */
-// app.use('/node_modules/jquery/dist/jquery.min.js', express.static(__dirname + '/node_modules/jquery/dist/jquery.min.js'));
-// app.use('/node_modules/angular/angular.js', express.static(__dirname + '/node_modules/angular/angular.js'));
-// app.use('/node_modules/angular-route/angular-route.js', express.static(__dirname + '/node_modules/angular-route/angular-route.js'));
-// app.use('/node_modules/angular-animate/angular-animate.js', express.static(__dirname + '/node_modules/angular-animate/angular-animate.js'));
+app.use('/node_modules/jquery/dist/jquery.min.js', express.static(__dirname + '/node_modules/jquery/dist/jquery.min.js'));
+app.use('/node_modules/angular/angular.js', express.static(__dirname + '/node_modules/angular/angular.js'));
+app.use('/node_modules/angular-route/angular-route.js', express.static(__dirname + '/node_modules/angular-route/angular-route.js'));
+app.use('/node_modules/angular-animate/angular-animate.js', express.static(__dirname + '/node_modules/angular-animate/angular-animate.js'));
 
 /* Frontend Routes*/
 app.use('/public/index.html', express.static('public/index.html'));

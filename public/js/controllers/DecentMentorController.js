@@ -2,7 +2,7 @@
 app.controller("DecentMentorController", ["$scope", "DecentAgencyFactory", function($scope, DecentAgencyFactory) {
   var init = function () {
       $scope.title = 'Decent Mentor HomePage';
-      $scope.about = {msg: "A Decent Agency By Deed."};
+      $scope.about = {msg: "A Decent Mentor About."};
       $scope.fetchDecentAgencyData = async () => {
         await DecentAgencyFactory.FetchDecentAgencyData().then((res)=>{
           console.log(res);

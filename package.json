@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/TheJollyLaMa/DecentAgency#readme",
   "dependencies": {
+    "angular": "^1.8.2",
+    "angular-animate": "^1.8.2",
+    "angular-route": "^1.8.2",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",

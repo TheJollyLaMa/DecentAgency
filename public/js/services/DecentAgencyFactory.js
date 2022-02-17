@@ -8,7 +8,7 @@ app.factory('DecentAgencyFactory', ['$http', function ($http) {
     }
     /* Returns data from backend */
     function FetchDecentAgencyData() {
-      return $http.get('/Dadata').then((res)=>{return res});
+      return $http.get('/da').then((res)=>{return res});
     }
 
 }]);
