@@ -6,14 +6,13 @@ router.get('/', function(req, res, next) {
   res.render('index.html');
 });
 
-/* GET Backend Homepage. */
+/* GET Backend data. */
 router.get('/da', function(req, res, next) {
   // mock json data
   var data = {
-    "msg": "Decent Agency HomePage"
+    "msg": "Backend Data"
   };
   res.json(data);
 });
-
 
 module.exports = router;

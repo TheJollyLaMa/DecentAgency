@@ -4,7 +4,7 @@ app.config([
   function($routeProvider) {
     $routeProvider
 
-    .when("/", {controller: "DecentAgencyController", templateUrl: "index.html"})
+    .when("/", {controller: "DecentAgencyController", templateUrl: "DecentAgency/decent_agency.html"})
 
     /* --- Decent Agency---*/
 
