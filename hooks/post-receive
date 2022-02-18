@@ -1,0 +1,3 @@
+/home/j/DecentAgency.git/hooks/post-receive
+#! /bin/sh
+GIT_WORK_TREE=/home/j/DecentAgency.git git checkout -f
