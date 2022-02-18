@@ -10,6 +10,7 @@ app.config([
 
     .when("/DecentAgency", {controller: "DecentAgencyController", templateUrl: "DecentAgency/decent_agency.html"})
     .when("/DecentAgency/About", {controller: "DecentAgencyController", templateUrl: "DecentAgency/about.html"})
+    .when("/DecentAgency/Chart", {controller: "DecentAgencyController", templateUrl: "DecentAgency/chart.html"})
 
     /* --- Decent Mentor---*/
 

@@ -1,7 +1,7 @@
 "use strict";
 app.controller("DecentAgencyController", ["$scope", "DecentAgencyFactory", function($scope, DecentAgencyFactory) {
   var init = function () {
-      $scope.title = 'Decent Agency HomePage';
+      $scope.title = {msg: 'Decent Agency HomePage', agency: "The ability to transform energy that arises from a combination of chioce and action."};
       $scope.about = {msg: "A Decent Agency By Deed."};
       $scope.fetchDecentAgencyData = async () => {
         await DecentAgencyFactory.FetchDecentAgencyData().then((res)=>{
