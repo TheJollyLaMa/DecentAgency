@@ -7,7 +7,8 @@ app.controller("DecentAgencyController", ["$scope", "DecentAgencyFactory", funct
         Agency: "The ability to transform energy that arises from a combination of chioce and action; The ability to interact with and affect a system and/or its components; A collection of individuals with such capacity to affect change in a system.",
         Mentor: "An experienced and trusted advisor.",
         Employee: "A person given work and paid for it, especially at a non-executive level.",
-        Contribute: "To give in order to help achieve or provide something; help to cause or bring about; supply for publication."
+        Contribute: "To give in order to help achieve or provide something; help to cause or bring about; supply for publication.",
+        Ethics: "moral principles that govern a person's behavior or the conducting of an activity."
       };
       $scope.about = {msg: "A Decent Agency By Deed."};
       $scope.fetchDecentAgencyData = async () => {
