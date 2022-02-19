@@ -1,11 +1,23 @@
 <div>
-    <br>
-    {{title.msg}}
+    <div class="row decent_nav">
+        <div class="col-4 mentor_connect">
+            <button class="btn btn-primary">Mentor</button>
+        </div>
+        <div class="col-4">
+        </div>
+        <div class="col-4 wallet_connect">
+            <button class="btn btn-primary">Connect</button>
+        </div>
+    </div>
     <br><br>
-    Agency: {{title.agency}}
+    <br>
+    <div class="row def_box">
+        <div class="defs" ng-repeat="(key,value) in dictionary">
+            <h3>{{key}}:</h3> {{value}}<br>
+        </div>
+        <br>
+    </div>
     <br>
     <br>
-    <h1>{{DAdata.msg}}</h1>
-    <hr>
-    <br>
+
 </div>
