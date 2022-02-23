@@ -9,7 +9,7 @@ app.controller("DecentMentorController", ["$scope", "DecentAgencyFactory", funct
           $scope.DAdata = res.data;
           $scope.lbs_expected = 0;
           $scope.lbs_stored = 0;
-        })
+        });
       };
     
       $scope.fetchDecentAgencyData();

@@ -1,12 +1,13 @@
 <div>
     <div class="row decent_nav">
-        <div class="col-4 mentor_connect">
+        <div class="col-6 mentor_connect">
             <button class="btn btn-primary">Mentor</button>
         </div>
-        <div class="col-4">
-        </div>
-        <div class="col-4 wallet_connect">
-            <button class="btn btn-primary">Connect</button>
+        <div class="col-6 wallet_connect">
+            <button ng-if="!wallet_connected()" ng-click="connect()" class="btn btn-primary">Connect</button>
+            <div ng-if="wallet_connected()" class="account_disp">
+                <h4>{{display_account_first}}  <img height="20px" width="20px" src="img/Ens_Eth_Breathe.gif" alt="ENS Eth Icon"><img height="20px" width="20px" src="img/Ens_Eth_Breathe.gif" alt="ENS Eth Icon"><img height="20px" width="20px" src="img/Ens_Eth_Breathe.gif" alt="ENS Eth Icon">  {{display_account_last}}</h4>
+            </div>
         </div>
     </div>
     <br><br>
@@ -15,7 +16,11 @@
         <div class="defs" ng-repeat="(key,value) in dictionary">
             <h3>{{key}}:</h3> {{value}}<br>
         </div>
-        <br>
+        <br><br><br>
+        <h3>Moral Principles Worth Considering</h3>
+        <ul class="defs" ng-repeat="moral in morals">
+            <li>{{moral}}</li>
+        </ul>
     </div>
     <br>
     <br>

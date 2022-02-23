@@ -33,6 +33,19 @@ form label, form input {
   color: white;
   margin: 2%;
 }
+.account_disp {
+  height: 100%;
+  width: auto;
+  text-align: center;
+  color: white;
+  margin: 2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.account_disp img {
+    display: inline;
+}
 .container {
   position: relative;
   height: 85vh;
@@ -144,23 +157,25 @@ textarea::placeholder {
 }
 .decent_nav {
   color: white;
-  position: absolute;
-  display: block;
-  text-align: center;
+  position: relative;
+  display: inline-block;
   width: 100%;
   padding: 1%;
-  margin-left: 1%;
 }
-
 .mentor_connect {
   text-align: center;
-  position: relative;
+  position: absolute;
   float: left;
+  margin-left: 1%;
+  top: 0;
+  left:0;
 }
 
 .wallet_connect {
   text-align: center;
-  position: relative;
+  position: absolute;
   float: right;
   margin-right: 1%;
+  top: 0;
+  right: 0;
 }

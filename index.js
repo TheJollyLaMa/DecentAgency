@@ -1,4 +1,3 @@
-
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -10,7 +9,7 @@ require('dotenv').config();
 
 /* Router Trunk */
 const indexRouter = require('./routes/index');
-// const usersRouter = require('./routes/users');
+const usersRouter = require('./routes/users');
 // const inventoryRouter = require('./routes/inventory');
 // const promocodeRouter = require('./routes/promocode');
 // const customerRouter = require('./routes/customer');
@@ -22,6 +21,7 @@ const indexRouter = require('./routes/index');
 const publicRouter = require('./routes/public');
 // const checkoutRouter = require('./routes/checkout');
 // const shipstationRouter = require('./routes/shipstation');
+const pyconRouter = require('./routes/pycon');
 
 /* connections to separate SmartHome App */
 // the app itself is run on the local microcontroller(arduino Yun)
@@ -56,7 +56,7 @@ app.set('view engine', 'html');
 
 /* Store Front Backend Routes */
 app.use('/', indexRouter);
-// app.use('/users', usersRouter);
+app.use('/users', usersRouter);
 // app.use('/inventory', inventoryRouter);
 // app.use('/promocode', promocodeRouter);
 // app.use('/customer', customerRouter);
@@ -73,15 +73,19 @@ app.use('/', indexRouter);
 
 /* Locally available Node Modules */
 // app.use('/node_modules/jquery/dist/jquery.min.js', express.static(__dirname + '/node_modules/jquery/dist/jquery.min.js'));
-// app.use('/node_modules/angular/angular.js', express.static(__dirname + '/node_modules/angular/angular.js'));
+app.use('/node_modules/angular/angular.min.js', express.static(__dirname + '/node_modules/angular/angular.min.js'));
+app.use('/node_modules/angular/angular.min.js.map', express.static(__dirname + '/node_modules/angular/angular.min.js.map'));
 // app.use('/node_modules/angular-route/angular-route.js', express.static(__dirname + '/node_modules/angular-route/angular-route.js'));
 // app.use('/node_modules/angular-animate/angular-animate.js', express.static(__dirname + '/node_modules/angular-animate/angular-animate.js'));
+app.use('/node_modules/web3/dist/web3.min.js', express.static(__dirname + '/node_modules/web3/dist/web3.min.js'));
 
 /* Frontend Routes*/
 app.use('/public/index.html', express.static('public/index.html'));
 app.use('/public', publicRouter);
 // app.use('/checkout', checkoutRouter);
 
+/* Python Junction */
+app.use('/pycon', pyconRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

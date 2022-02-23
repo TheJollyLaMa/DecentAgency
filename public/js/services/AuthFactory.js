@@ -17,7 +17,7 @@ app.factory('AuthFactory', ['$http', '$location', function ($http, $location) {
     function Mock_Cred_Check(credentials) {
         if (credentials.username === 'admin' && credentials.password === 'admin') {
             credentials.token="12345";
-            console.log(credentials)
+            console.log(credentials);
             saveData(credentials);
             $location.path('/BehindTheCounter');
         }else{

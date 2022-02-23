@@ -3,8 +3,7 @@
 /*global localStorage*/
 app.factory('DecentAgencyFactory', ['$http', function ($http) {
     return {
-      FetchDecentAgencyData: FetchDecentAgencyData,
-
+      FetchDecentAgencyData: FetchDecentAgencyData
     }
     /* Returns data from backend */
     function FetchDecentAgencyData() {
