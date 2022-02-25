@@ -1,3 +1,28 @@
 <div>
+    <br><br>
     {{title}}
-</div>
+    <br><hr><br>
+
+    <!-- profile card html and bootstrap -->
+    <div class="card">
+        <div class="card-header">
+            <!-- img sourced from IPFS was minted on local ganache chain and loaded to ipfs via express server route ~/nft_storage/store  -->
+            <img height="100px" width="100px" src='{{toon_head}}' alt="Ens_Eth_Breathe">
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-xs-4">
+                    <h3>username: {{user.username}}</h3>
+                    <p>email: {{user.email}}</p>
+                    <p>wallet: {{user.wallet}}</p>
+                    <p>credentials: {{user.portfolio_site}}</p>
+                    <p>office hours: {{user.office_hours}}</p>
+                </div>
+                <div class="col-xs-8">
+                    <p>{{user.bio}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+ </div>

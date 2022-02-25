@@ -10,6 +10,7 @@ require('dotenv').config();
 /* Router Trunk */
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
+const nftstorageRouter = require('./routes/nft_storage');
 // const inventoryRouter = require('./routes/inventory');
 // const promocodeRouter = require('./routes/promocode');
 // const customerRouter = require('./routes/customer');
@@ -86,6 +87,10 @@ app.use('/public', publicRouter);
 
 /* Python Junction */
 app.use('/pycon', pyconRouter);
+
+/* Web3 Routes */
+app.use('/nft_storage', nftstorageRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
