@@ -36,6 +36,7 @@
     "express": "^4.17.2",
     "http-errors": "^2.0.0",
     "jquery": "^3.6.0",
+    "mime": "^3.0.0",
     "nft.storage": "^6.0.0",
     "nodemon": "^2.0.15",
     "web3": "^1.7.0"

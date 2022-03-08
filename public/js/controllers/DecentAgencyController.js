@@ -38,6 +38,8 @@ app.controller("DecentAgencyController", ["$scope", "$route", "DecentAgencyFacto
         console.log($scope.display_account_first, "$$$", $scope.display_account_last);
       }
     };
+    $scope.ens_eth_breathe = 'http://bafybeifklwly6spqwnofu26llpgreii74riix432aluhoa3xslxydqihma.ipfs.localhost:8080';
+
     $scope.wallet_connected = () => {
       if (window.ethereum.isConnected()) {
         console.log("Connected to blockchain!")

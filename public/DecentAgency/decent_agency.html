@@ -6,7 +6,7 @@
         <div class="col-6 wallet_connect">
             <button ng-if="!wallet_connected()" ng-click="connect()" class="btn btn-primary">Connect</button>
             <div ng-if="wallet_connected()" class="account_disp">
-                <h4>{{display_account_first}}  <img height="20px" width="20px" src="img/Ens_Eth_Breathe.gif" alt="ENS Eth Icon"><img height="20px" width="20px" src="img/Ens_Eth_Breathe.gif" alt="ENS Eth Icon"><img height="20px" width="20px" src="img/Ens_Eth_Breathe.gif" alt="ENS Eth Icon">  {{display_account_last}}</h4>
+                <h4>{{display_account_first}}  <img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon"><img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon"><img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon">  {{display_account_last}}</h4>
             </div>
         </div>
     </div>
