@@ -9,8 +9,8 @@ app.controller("DecentMentorController", ["$scope", "DecentMentorFactory", funct
           $scope.mentorMetaData = res;
         });
       };
-      $scope.toon_head = 'http://bafybeidyq6pmt7geavy52rfmo6xmfxyxw6eaflyj3goe7y2i7zbip5e6me.ipfs.localhost:8080/toon_head.png';
-    
+      $scope.toon_head = 'https://ipfs.io/ipfs/QmYgbhsXQPPC79we1AaVQMoH8tSCSo4N2QD5urT1EvDCBM?filename=toon_head.png';
+      $scope.mandelblum = 'https://ipfs.io/ipfs/QmQRonNAkHWRcVuWwKbpeDuf34D8vW3yGjvxLoa7Qcjypf?filename=mandelbrot_blum.gif';
       $scope.FetchDecentMentorData();
   }
 

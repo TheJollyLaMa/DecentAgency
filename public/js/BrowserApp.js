@@ -17,6 +17,11 @@ app.config([
     .when("/DecentMentor", {controller: "DecentMentorController", templateUrl: "DecentMentor/decent_mentor.html"})
     .when("/DecentMentor/About", {controller: "DecentMentorController", templateUrl: "DecentMentor/about.html"})
 
+    /* --- StarGate---*/
+
+    .when("/StarGate", {controller: "StarGateController", templateUrl: "StarGate/stargate.html"})
+
+
     /* --- Login Routes---*/
     .when("/Login", {controller: "AuthController",templateUrl: "Login.html"})
     .when("/Logout", {resolve: {deadResolve: function ($location, AuthFactory) {AuthFactory.clearData(); $location.path('/Login'); } }})

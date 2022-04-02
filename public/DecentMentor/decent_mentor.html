@@ -1,8 +1,17 @@
-<div>
+<div class="decentmentor">
+    <div class="row decent_nav">
+        <div class="col-6 mentor_connect stargate">
+            <button class="btn btn-primary"><a href="#!/StarGate" style="text-decoration:none;">StarGate</a></button>
+        </div>
+        <div class="col-6 wallet_connect">
+            <button ng-if="!wallet_connected()" ng-click="connect()" class="btn btn-primary">Connect</button>
+            <div ng-if="wallet_connected()" class="account_disp">
+                <h4>{{display_account_first}}  <img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon"><img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon"><img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon">  {{display_account_last}}</h4>
+            </div>
+        </div>
+    </div>
     <br><br>
-    {{title}}
-    <br><hr><br>
-
+    <br>
     <!-- profile card html and bootstrap -->
     <div class="card">
         <div class="card-header">
@@ -23,6 +32,16 @@
                 </div>
             </div>
         </div>
+        <!-- another card -->
+        <div class="card">
+            <div class="card-header">
+                <h3>Mentor's Portfolio</h3>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <img height="100px" width="100px" src='{{mandelblum}}' alt="mandelblum">
+                </div>
+            </div>
     </div>
     <br><br>
  </div>

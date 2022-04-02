@@ -2,6 +2,7 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: white;
   text-align: center;
+  background-color: ;
 }
 
 a {
@@ -77,6 +78,7 @@ form label, form input {
   text-align: left;
   margin: 2%;
   position: relative;
+  opacity: 1;
 }
 .card::before {
   height: 100%;
@@ -94,7 +96,23 @@ form label, form input {
 .card img {
   margin: 6%;
 }
-
+.gateway {
+  width: 50%;
+  height: 200px;
+  padding: 3%;
+  background-image: url('../img/infinite_playground.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 0.55;
+  color: navy;
+  width: 33%;
+  text-align: left;
+  margin: 2%;
+  position: absolute;
+  opacity: 1;
+}
 .img {
   background-repeat: no-repeat;
   background-size: cover;

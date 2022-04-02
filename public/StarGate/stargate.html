@@ -1,0 +1,18 @@
+<div class="stargate">
+    <div class="row decent_nav">
+        <div class="col-6 mentor_connect">
+            <button class="btn btn-primary"><a href="#!/DecentMentor" style="text-decoration:none;">Mentor</a></button>
+        </div>
+        <div class="col-6 wallet_connect">
+            <button ng-if="!wallet_connected()" ng-click="connect()" class="btn btn-primary">Connect</button>
+            <div ng-if="wallet_connected()" class="account_disp">
+                <h4>{{display_account_first}}  <img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon"><img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon"><img height="20px" width="20px" src={{ens_eth_breathe}} alt="ENS Eth Icon">  {{display_account_last}}</h4>
+            </div>
+        </div>
+    </div>
+    <div class="gateway">
+        <!-- <img src="./img/infinite_playground.jpg" alt="infinite_playground"> -->
+    </div>
+    <br><br>
+    <br>
+</div>
