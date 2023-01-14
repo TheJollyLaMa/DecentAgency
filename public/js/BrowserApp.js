@@ -12,6 +12,12 @@ app.config([
     .when("/DecentAgency/About", {controller: "DecentAgencyController", templateUrl: "DecentAgency/about.html"})
     .when("/DecentAgency/Chart", {controller: "DecentAgencyController", templateUrl: "DecentAgency/chart.html"})
 
+    /* --- Decent Agents ---*/
+
+    .when("/FoundMounds", {controller: "FoundMoundsController", templateUrl: "DecentAgents/found_mounds.html"})
+    .when("/UpstateFiddleheads", {controller: "UpstateFiddleheadsController", templateUrl: "DecentAgents/upstate_fiddleheads.html"})
+
+
     /* --- Decent Mentor---*/
 
     .when("/DecentMentor", {controller: "DecentMentorController", templateUrl: "DecentMentor/decent_mentor.html"})

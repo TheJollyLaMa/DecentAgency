@@ -10,7 +10,8 @@ app.controller("DecentAgencyController", ["$scope", "$route", "DecentAgencyFacto
       Ethics: "Moral principles that govern a person's behavior or the conducting of an activity.",
       Protocol: "1.)the official procedure or system of rules governing affairs of state or diplomatic occasions.\n 2.) the original draft of a diplomatic document, especially of the terms of a treaty agreed to in conference and signed by the parties.",
       Investor: "a person or organization that puts money into financial plans, property, etc. with the expectation of achieving a profit.",
-      Band: "A group of musicians, singers, or other performers who are united by a common theme or purpose."
+      Band: "A group of musicians, singers, or other performers who are united by a common theme or purpose.",
+      Dignity: "The state or quality of being worthy of honor or respect."
     };
     $scope.morals = ["Honesty", "Integrity", "Loyalty", "Courage", "Honor", "Humor", "Free-Expression", "Power", "Discipline", "Compassion", "Perseverence", "Tolerance", "Cleanliness", "Duty", "Gratitude"];
     $scope.about = {msg: "A Decent Agency By Deed."};
